@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+  <title>Menu</title>
+  </head>
+  <body bgcolor='#FFDEAD'>
+   <h2>Campos de Formulários</h2>
+   <form action='pegadados.php' method='POST'><br>
+   <table>
+   <tr><td>Nome:</td><td><input type='text' name='c1' size='50' maxlength=120></td></tr>
+   <tr><td>Endereço:</td><td><input type='text' name='c2' size='50' maxlength=120></td></tr>
+   <tr><td>Tipo Sanguineo:</td><td>(<input type='radio' name=c3 value='A'>) A
+                   (<input type='radio' name=c3 value='B'>) B
+				   (<input type='radio' name=c3 value='AB'>) AB
+				   (<input type='radio' name=c3 value='O'>)O</td></tr>
+   <tr><td>Nivel de renda</td><td><select name=c4>
+     <option value=1>Até 10 SM</option>
+     <option value=2>Entre 11 e 20 SM</option>
+     <option value=3>Entre 21 e 30 SM</option>
+     <option value=4>Acima de 31 SM</option>
+   </select></td></tr>
+   <tr><td><input type='reset' value='Limpar dados'></td><td><input type='submit' value='enviar dados'></td></tr>
+   </table>
+   </form>
+   O Servidor de página captura o dado digitado em campos de form e monta uma STRING DE ENVIO, que tem o seguinte formato:<br>
+   "c1=valor1&c2=valor2&....&cn=valorn"
+
+   </body>
+</html>
+
+
